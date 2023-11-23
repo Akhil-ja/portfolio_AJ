@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Akhil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <h1 style="font-size:3rem;"><span style="color: purple;"></span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text ">
+
+                <h1 class="pt-5">Hi I'm <span>AKHIL</span><br style="opacity: 0.5;">Jagadish from Kerala</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="about-col-1">
+                    <img class="" src="images/About.jpg" alt="About me" width="300rem">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>input about it Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nisi volupt
+                        as veniam doloribus aspernatur distinctio inventore architecto ab, voluptatum non fuga ratione t
+                        otam maxime numquam saepe similique accusantium temporibus. Maiores.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links a-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents a-tab" id="Skills">
+                        <ul>
+                            <li><Span>HTML/CSS & Bootstrap</Span><br>Designing web interface</li>
+                            <li><Span>C Programming</Span><br>Know basic syntax to advanced concepts,<br> and become a
+                                confident coder with various
+                                course.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><Span>Internship</Span><br>Hands on Arudino based internship <br> in Infopark Kochi</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><Span>Bachelor</Span><br>In Btech ECE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+
+
+    <!-- Resume -->
+    <section id="resume" class="resume mt-5">
+        <div class="container">
+
+            <div class="section-title">
+                <h2 class="subtitle">Resume</h2>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="resume-title">Summary</h3>
+                    <div class="resume-item pb-0">
+                        <h4>Akhil Jagadish</h4>
+                        <p><em>Enthusiastic and detail-oriented web developer eager to embark on a journey in creating
+                                user-friendly digital experiences.
+                                Committed to learning and applying web development skills to craft engaging websites
+                                from concept to completion.</em></p>
+                        <p>
+                        <ul>
+                            <li>Palakkad,Kerala IN</li>
+                            <li>+91 8469237811</li>
+                            <li>akhiljagadishin@gmail.com</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+
+
+                        <h4>bachelor of technology in electronics and communication engineering</h4>
+                        <h5>2019-2023</h5>
+                        <p><em>Vidya Academy of Science and Technology,Thrissur,Kerala</em></p>
+                        <p>A dedicated graduate with a Bachelor of Technology in Electronics and Communication
+                            Engineering,I bring a solid
+                            foundation in cutting-edge technology and a passion for innovation.Equipped with a diverse
+                            skill set,including
+                            signal
+                            processing and communication systems, I am adept at problem-solving and thrive in dynamic
+                            environments.Eager to
+                            apply
+                            my knowledge to contribute to technological advancements and drive positive outcomes in the
+                            field.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Higher Secondary</h4>
+                        <h5>2017-2019</h5>
+                        <p><em>Lions English School,Silvassa,D&NH</em></p>
+                        <p>I pursued a comprehensive education in Science, Mathematics,and Computer Science during my
+                            11th and 12th years.
+                            Equipped with a solid foundation in these disciplines,I possess strong problem-solving
+                            abilities and a keen
+                            understanding of technology.My academic background reflects a commitment to excellence and a
+                            readiness to apply my
+                            skills to real-world challenges.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Resume Section -->
+    <!-- Resume -->
+
+
+
+    <!-- Servicee -->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Designer</h2>
+                    <p>As a budding web designer, I specialize in crafting visually appealing and user-friendly
+                        websites. With a keen eye for
+                        design trends, I bring creativity and enthusiasm to elevate your online presence.</p>
+
+                </div>
+
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Embarking on my journey in web development, I offer a passion for learning and a commitment to
+                        creating visually
+                        appealing and user-friendly websites. With a focus on staying current with industry trends.</p>
+
+                </div>
+
+                <div>
+                    <h2>Video Editing</h2>
+                    <p>Venturing into video editing, I specialize in creating engaging and polished video content. With
+                        a passion for
+                        storytelling and attention to detail, I bring creativity and technical skills to enhance your
+                        visual projects.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Servicee -->
+
+
+    <!-- Portfolio -->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="subtitle my-5">My Work</h1>
+            <div class="work-list">
+                <div class="work ">
+                    <img src="images\acastro_STK103__04.jpg" alt="work1">
+                    <a style="color: white;" href="https://akhil-ja.github.io/Amazon-Clone/" target="_main">
+                        <div class="layer">
+                            <h3>Amazon Clone</h3>
+                            <p>Check out my Amazon look-alike website! It's made with HTML and CSS, easy to use, and
+                                looks great.
+                                Browse products,and enjoy a simple, stylish online shopping experience!
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work ">
+                    <img src="images/irctc-work.jpg" alt="work1">
+                    <a style="color: white;" href="https://akhil-ja.github.io/IRCTC-Clone/" target="_main">
+                        <div class="layer">
+                            <h3>IRCTC Clone</h3>
+                            <p>Discover my IRCTC booking website clone – a user-friendly platform crafted with HTML and
+                                CSS. Easily navigate through a
+                                simple interface for train bookings.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work">
+                    <img src="images\Online-Learning.jpg" alt="work1">
+                    <a style="color: white;" href="">
+                        <div class="layer">
+                            <h3>Online Learning Platform</h3>
+                            <p>Explore our user-friendly online learning site! We've used HTML,CSS,and Bootstrap to
+                                make it look great on any device.
+                                Easily browse through a variety of courses.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+
+    <!-- contact -->
+
+    <div class="contact my-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p class="font-weight-bolder" style="color:#dc3545;">Contact Me</p>
+                    <p><i class="fa-solid fa-envelope"></i> akhiljagadishin@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 8469237811</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/_akhil_jagadish_?igshid=OGQ5ZDc2ODk2ZA==" target="_main"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.threads.net/@_akhil_jagadish_" target="_main"><i
+                                class="fa-brands fa-threads"></i></a>
+                        <a href="https://www.linkedin.com/in/akhil-jagadish-9383b1242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/akhil_jagadish?t=ZBBeSL4HZUKtJGn-gjcOjw&s=08" target="_main"><i
+                                class="fa-brands fa-twitter"></i></a>
+
+                    </div>
+                    <a href="pdfs/Akhil Resume .pdf" download class="btn btn-danger mt-3">Download CV</a>
+                </div>
+                <div class="contact-right  ">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </form>
+                    <span class="m-5" id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright d-flex justify-content-center align-items-center">
+            <p class="text-secondary ">Copyright © Akhil </p>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+
+
+
+
+
+    
+
+    <script src="portfolio.js"></script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("a-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("a-tab");
+            }
+
+            event.currentTarget.classList.add("a-link");
+            document.getElementById(tabname).classList.add("a-tab")
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

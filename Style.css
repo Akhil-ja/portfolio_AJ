@@ -1,0 +1,624 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ancor {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+body {
+
+    background: #080808;
+    color: white;
+
+}
+
+.header {
+
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/banner12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+}
+
+.container {
+
+    padding: 10px 10%;
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+
+    width: 140px;
+}
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #dc3545;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+
+
+}
+
+
+nav ul li a:hover::after {
+
+    width: 100%;
+
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.header-text {
+
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+
+.header-text h1 {
+
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+
+.header-text h1 span {
+
+    color: #dc3545;
+}
+
+/* About*********************************************************************************************** */
+
+.about {
+
+    padding-top: 80px;
+    color: #ababab;
+
+}
+
+.about .container.row {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+
+
+    border-radius: 15px;
+}
+
+.about-col-2 {
+
+    flex-basis: 60%;
+}
+
+.subtitle {
+
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.tab-links::after {
+
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #dc3545;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+
+.tab-links.a-link::after {
+
+    width: 50%;
+
+}
+
+.tab-contents ul li {
+
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+
+    color: #dc3545;
+    font-size: 14px;
+}
+
+.tab-contents {
+
+    display: none;
+}
+
+.tab-contents.a-tab {
+
+    display: block;
+}
+
+/* ********************srevices**************************** */
+
+
+.services {
+    padding: 30px 0;
+}
+
+
+.services-list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover {
+
+    background: #dc3545;
+    transform: translateY(-10px);
+}
+
+
+/* Resume */
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    color: #ababab;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+    color: #ababab;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #dc3545;
+    border: 2px solid #dc3545;
+
+}
+
+/* work***************** */
+
+.portfolio {
+
+    margin-bottom: 100px;
+}
+
+
+.work-list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+
+}
+
+
+.work {
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+    transform: 0.5s;
+}
+
+.layer {
+
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #dc3545);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+    transform: 0.5s;
+}
+
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+
+    margin-top: 20px;
+    color: black;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.work:hover img {
+
+    transform: scale(1.1);
+
+}
+
+
+.work:hover .layer {
+
+    height: 100%;
+}
+
+
+/* contact */
+
+.contact-left {
+
+    flex-basis: 35%;
+}
+
+.contact-right {
+
+    flex-basis: 60%;
+}
+
+.contact-left {
+
+    margin-top: 30px;
+}
+
+
+.social-icons {
+
+    margin-top: 30px;
+
+}
+
+.social-icons a {
+
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+
+}
+
+.social-icons a :hover {
+
+    color: #dc3545;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transform: 0.5s;
+
+}
+
+
+.contact-right form {
+
+    width: 100%;
+
+}
+
+form input,
+form textarea {
+
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.copyright {
+
+    width: 100%;
+    padding-top: 15px;
+    background: #262626;
+    font-size: small;
+}
+
+
+
+/* CSS for small screens */
+
+
+nav .fas {
+
+    display: none;
+}
+
+
+
+@media only screen and (max-width:600px) {
+
+
+    .portfolio {
+
+        margin-bottom: 0px;
+    }
+
+    .header {
+        background-image: url(images/banner116.9.png);
+        height: 46vh;
+    }
+
+    .about {
+        padding-top: 0px;
+
+    }
+
+    .header-text h1 {
+
+        font-size: 30px;
+    }
+
+    nav .fas {
+
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+
+        background: #dc3545;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+
+    nav ul li {
+
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+
+        font-size: 30px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+
+        font-size: 14px;
+    }
+
+    .tab-links {
+
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+
+        flex-basis: 100%;
+    }
+
+    .copyright {
+
+        font-size: 12px;
+    }
+
+    .about img {
+
+        height: auto;
+        width: 200px;
+    }
+
+    .about-col-1 {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .resume .resume-item {
+
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width:1024px)and (min-width:400px) {
+
+    .about-col-1 {
+
+        margin-right: 10px;
+
+
+    }
+.header {
+    width: 100%;
+    height: 57vh;
+}
+
+}
+
+#msg {
+
+    color: green;
+    display: block;
+    font-weight: 700;
+}
